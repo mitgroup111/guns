@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * 信用信息控制器
@@ -38,11 +39,16 @@ public class TopController extends BaseController {
     }
 
     /**
-     * 跳转到添加信用信息
+     * 获取信用信息列表
      */
-    @RequestMapping("/list")
-    public String creditinfoList() {
-        return PREFIX + "creditList.html";
+    @RequestMapping(value = "/list")
+    public String list(@RequestParam String condition,Model model) {
+        HashMap<String,Object> mapParam = new HashMap<String,Object>();
+        mapParam.put("condition",condition);
+        List<Creditinfo> creditinfos =  creditinfoService.selectCustomerList(mapParam);
+        model.addAttribute("conValue",condition);
+        model.addAttribute("creditinfos",creditinfos);
+        return PREFIX + "index.html";
     }
 
     /**
