@@ -3342,7 +3342,7 @@ a.forum-item-title:hover {
 
 body {
     font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #676a6c;
     overflow-x: hidden;
 }
@@ -7894,4 +7894,124 @@ body.skin-3 {
 .tab-menu-selected {
     background-color: #293846 !important;
     color: white !important;
+}
+li,ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after {
+    content:"\200B";
+    display:block;
+    height:0;
+    clear:both;
+}
+.content-w{
+    width:1200px;
+    margin:0 auto;
+}
+.head{
+    height: 130px;
+}
+.logo{
+    margin-top:25px;
+}
+.head-text{
+    line-height: 130px;
+    color: #c20c0c;
+    font-size:18px;
+}
+.nav{
+    height:45px;
+    line-height: 45px;
+    background: #c20c0c;
+}
+.nav ul li{
+    float: left;
+    width:180px;
+    border-right: 1px solid #dd2323;
+    border-left: 1px solid #a70808;
+    text-align: center;
+}
+.nav ul li:first-child{
+    border-left: none;
+}
+.nav ul li:last-child{
+    border-right: none;
+}
+.nav ul li a{
+    color:#fff;
+}
+.search-input {
+    width: 820px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    background: #ffffff;
+    line-height: 50px;
+    text-indent: 20px;
+    vertical-align: middle;
+}
+.search-btn {
+    vertical-align: middle;
+    width: 80px;
+    height: 50px;
+    background: #e22323 url(../img/search_grey.png) no-repeat 30px;
+    border: 0px;
+    cursor: pointer;
+    float: right;
+}
+.search-info{
+    min-height: 400px;
+}
+.search-tab,
+.search-content{
+    position: relative;
+    width:900px;
+    margin:0 auto;
+}
+.search-tab{
+    z-index: 2;
+    margin-top:50px;
+    line-height: 30px;
+}
+.search-content{
+    z-index: 1;
+    top: -1px;
+}
+.search-tab li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+.search-tab li img{
+    display: block;
+    margin:0 auto;
+}
+.search-tab li.active{
+    color:#c20c0c;
+}
+.foot{
+    background: #c20c0c;
+    height: 130px;
+    color:#fff;
+    font-size: 13px;
+    line-height: 28px;
+}
+.foot-img{
+    margin:25px 100px 0 100px;
+}
+.foot-text{
+    margin-top: 20px;
+}
+.foot-text a{
+    color: #fff;
+    padding: 0 10px;
 }
