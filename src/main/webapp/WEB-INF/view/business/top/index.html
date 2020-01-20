@@ -7,12 +7,9 @@
     </div>
     <div class="search-content">
         <div class="">
-            <input type="text"  id="condition" class="search-input" placeholder="请输入信用信息" value="${conValue}">
+            <input type="text"  id="condition" class="search-input" placeholder="请输入信用信息">
             <input type="button" class="search-btn" value="" onclick="Creditinfo.search()">
         </div>
-        @for(item in creditinfos){
-        <span>${item.qiyename}</span>
-        @}
     </div>
 </div>
 <script src="${ctxPath}/static/modular/business/top/index.js"></script>

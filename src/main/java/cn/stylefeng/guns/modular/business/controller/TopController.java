@@ -48,7 +48,7 @@ public class TopController extends BaseController {
         List<Creditinfo> creditinfos =  creditinfoService.selectCustomerList(mapParam);
         model.addAttribute("conValue",condition);
         model.addAttribute("creditinfos",creditinfos);
-        return PREFIX + "index.html";
+        return PREFIX + "creditList.html";
     }
 
     /**
