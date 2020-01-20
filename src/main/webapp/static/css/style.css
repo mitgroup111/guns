@@ -12,6 +12,8 @@ h4,
 h5,
 h6 {
     font-weight: 100;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -7932,25 +7934,25 @@ li,ul{
     color: #c20c0c;
     font-size:18px;
 }
-.nav{
+.head-nav{
     height:45px;
     line-height: 45px;
     background: #c20c0c;
 }
-.nav ul li{
+.head-nav ul li{
     float: left;
     width:180px;
     border-right: 1px solid #dd2323;
     border-left: 1px solid #a70808;
     text-align: center;
 }
-.nav ul li:first-child{
+.head-nav ul li:first-child{
     border-left: none;
 }
-.nav ul li:last-child{
+.head-nav ul li:last-child{
     border-right: none;
 }
-.nav ul li a{
+.head-nav ul li a{
     color:#fff;
 }
 .search-input {
@@ -8060,12 +8062,70 @@ li,ul{
     padding:0 15px 15px 15px;
 }
 .companylist li h1{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 .companylist li h1 a{
     color: #c20c0c;
 }
 .companylist li p span{
     padding: 0 15px;
+}
+.company-messages-box,
+.company-showmessage-box{
+    border: 1px solid #dfdfdf;
+    padding: 20px 15px 15px 15px;
+    margin-bottom:10px;
+    margin-top: 20px;
+    position: relative;
+}
+.company-messages-box h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.company-messages-box h1 span{
+    background: #82ae46;
+    color: #fff;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: normal;
+}
+.company-messages-box h2{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+.company-messages-box h2 a{
+    border: 1px solid #c20c0c;
+    color: #c20c0c;
+    padding:8px 20px;
+    font-size:15px;
+}
+.company-showmessage-box{
+    padding-top: 0;
+}
+.company-showmessage-box .mt{
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+.company-showmessage-box .mt span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c20c0c;
+    border-bottom: 2px solid #c20c0c;
+    padding:0 5px 12px 5px;
+}
+.resultTab1 td{
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+}
+.graybg{
+    background: #f5f5f5;
+    font-weight: bold;
 }

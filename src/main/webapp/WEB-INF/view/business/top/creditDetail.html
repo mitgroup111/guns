@@ -1,38 +1,35 @@
-@layout("/common/_container.html"){
-<div class="row">
-    <div class="col-sm-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>信用信息管理</h5>
-            </div>
-            <div class="ibox-content">
-                <div class="row row-lg">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <#NameCon id="condition" name="名称"/>
-                            </div>
-                            <div class="col-sm-3">
-                                <#button name="搜索" placeholder="企业名称" icon="fa-search" clickFun="Creditinfo.search()"/>
-                            </div>
-                        </div>
-                        <div class="hidden-xs" id="CreditinfoTableToolbar" role="group">
-
-                                <#button name="添加" icon="fa-plus" clickFun="Creditinfo.openAddCreditinfo()"/>
-
-
-                                <#button name="修改" icon="fa-edit" clickFun="Creditinfo.openCreditinfoDetail()" space="true"/>
-
-
-                                <#button name="删除" icon="fa-remove" clickFun="Creditinfo.delete()" space="true"/>
-
-                        </div>
-                        <#table id="CreditinfoTable"/>
-                    </div>
-                </div>
+@layout("/common/_content1.html"){
+<div class="content-w">
+    <div class="creditDetail">
+        <div class="company-messages-box">
+            <h1>麦特集团有限公司<span>存续</span></h1>
+            <p>统一社会信用代码：91370600576630689W</p>
+            <h2><a href=""><img src="${ctxPath}/static/img/downloadicon.png"> 下载信用信息</a></h2>
+        </div>
+    </div>
+    <div class="company-showmessage-box">
+        <div class="mt"><span>基础信息</span></div>
+        <div class="fixed-table-container">
+            <div class="resultTab1">
+                <table>
+                    <tr>
+                        <td width="20%" class="graybg">法定代表人</td>
+                        <td width="30%" >盖方</td>
+                        <td width="20%" class="graybg">企业类型</td>
+                        <td width="30%" >有限责任公司(自然人投资或控股)</td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="graybg">成立日期</td>
+                        <td width="30%">2011-06-10</td>
+                        <td width="20%" class="graybg">住所</td>
+                        <td width="30%">山东省烟台市经济技术开发区广州路17号</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
+
 </div>
-<script src="${ctxPath}/static/modular/business/creditinfo/creditinfo.js"></script>
+
+<script src="${ctxPath}/static/modular/business/top/creditDetail.js"></script>
 @}
