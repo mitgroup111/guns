@@ -44,7 +44,12 @@ h5 {
     margin-top: 5px;
     font-weight: 600;
 }
-
+a,a:active,a:visited{
+    color: #555;
+}
+a:hover{
+    color:#c20c0c;
+}
 a:focus {
     outline: none;
 }
@@ -8014,4 +8019,53 @@ li,ul{
 .foot-text a{
     color: #fff;
     padding: 0 10px;
+}
+.head-search{
+    margin-top:40px;
+    width:600px;
+}
+.head-search .search-input{
+    width:520px;
+}
+.sub-tag dd a.active{
+    color:#c20c0c;
+}
+.sub-tag{
+    margin:20px 0;
+}
+.sub-tag dl{
+    line-height: 30px;
+}
+.sub-tag dt{
+    width:90px;
+    float: left;
+}
+.sub-tag dd{
+    float: left;
+    width:900px;
+}
+.sub-tag dd a{
+    padding:0 10px;
+}
+.sub-tag dd a.active{
+    color:#c20c0c;
+    font-weight: bold;
+}
+.companylist{
+    border-top: 3px solid #dfdfdf;
+}
+.companylist li{
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 15px;
+    padding:0 15px 15px 15px;
+}
+.companylist li h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.companylist li h1 a{
+    color: #c20c0c;
+}
+.companylist li p span{
+    padding: 0 15px;
 }
