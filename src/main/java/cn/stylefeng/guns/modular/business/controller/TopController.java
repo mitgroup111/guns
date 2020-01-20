@@ -46,8 +46,14 @@ public class TopController extends BaseController {
         HashMap<String,Object> mapParam = new HashMap<String,Object>();
         mapParam.put("condition",condition);
         List<Creditinfo> creditinfos =  creditinfoService.selectCustomerList(mapParam);
+        String displayFlg = "0";
+        if(creditinfos!=null && creditinfos.size()>0){
+            displayFlg = "1";
+        }
+
         model.addAttribute("conValue",condition);
         model.addAttribute("creditinfos",creditinfos);
+        model.addAttribute("displayFlg",displayFlg);
         return PREFIX + "creditList.html";
     }
 

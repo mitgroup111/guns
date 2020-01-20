@@ -11,14 +11,23 @@
         </dl>
     </div>
     <div class="companylist">
+        @if(displayFlg=='0'){
         <ul>
-        @for(item in creditinfos){
+            <li>
+                没有相关信息
+            </li>
+        </ul>
+        @}
+        @if(displayFlg=='1'){
+        <ul>
+            @for(item in creditinfos){
             <li>
                 <h1><a href="">${item.qiyename}</a> </h1>
                 <p>统一社会信用代码：${item.xinyongcode}<span></span>企业类型：${item.qiyetype}</p>
             </li>
-        @}
+            @}
         </ul>
+        @}
 
     </div>
 </div>
