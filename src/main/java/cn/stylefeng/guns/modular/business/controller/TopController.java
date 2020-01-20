@@ -52,6 +52,14 @@ public class TopController extends BaseController {
     }
 
     /**
+     * 跳转到信用信息首页
+     */
+    @RequestMapping("/list1")
+    public String list1() {
+        return PREFIX + "creditList.html";
+    }
+
+    /**
      * 跳转到添加信用信息
      */
     @RequestMapping("/detail")
