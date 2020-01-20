@@ -16,5 +16,10 @@ CreditinfoList.search = function () {
 };
 
 $(function () {
-
+    var $div_li =$(".company-showmessage-box .tab-title li");
+    $div_li.click(function(){
+        $(this).addClass("active") .siblings().removeClass("active");
+        var index =  $div_li.index(this);
+        $(".result-tabs > div").eq(index).show().siblings().hide();
+    })
 });

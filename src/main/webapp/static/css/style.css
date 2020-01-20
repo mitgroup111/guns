@@ -8055,19 +8055,24 @@ li,ul{
 }
 .companylist{
     border-top: 3px solid #dfdfdf;
+    min-height: 600px;
 }
 .companylist li{
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 15px;
-    padding:0 15px 15px 15px;
+    padding:15px 15px 5px 15px;
 }
 .companylist li h1{
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
+    line-height: 32px;
 }
 .companylist li h1 a{
     color: #c20c0c;
+}
+.companylist li p{
+    line-height: 28px;
 }
 .companylist li p span{
     padding: 0 15px;
@@ -8128,4 +8133,88 @@ li,ul{
 .graybg{
     background: #f5f5f5;
     font-weight: bold;
+}
+.nodate{
+    background: url(../img/nodate.png) no-repeat top center;
+    text-align: center;
+    padding-top: 120px;
+    margin: 150px 0;
+}
+.company-showmessage-box .tab-title li {
+    float: left;
+    width: 12.5%;
+    border-right: 1px solid #ddd;
+    height: 100px;
+    cursor: pointer;
+    background: url(../img/tabtitleicon.png) center 20px no-repeat;
+    padding-top: 64px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.company-showmessage-box .tab-title li.list-2{
+    background: url(../img/tabtitleicon-2.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-3{
+    background: url(../img/tabtitleicon-3.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-4{
+    background: url(../img/tabtitleicon-4.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-5{
+    background: url(../img/tabtitleicon-5.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-6{
+    background: url(../img/tabtitleicon-6.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-7{
+    background: url(../img/tabtitleicon-7.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li.list-8{
+    background: url(../img/tabtitleicon-8.png) center 20px no-repeat;
+}
+.company-showmessage-box .tab-title li span {
+    position: absolute;
+    right: 17px;
+    top: 8px;
+    color: #999999;
+    font-size: 15px;
+}
+.padding0{
+    padding: 0 !important;
+}
+.company-showmessage-box .tab-title li.active{
+    background: url(../img/tabtitleicon-hover.png) no-repeat center 20px #c20c0c;
+    color:#fff;
+}
+.company-showmessage-box .tab-title li.active span{
+    color:#fff;
+}
+.company-showmessage-box .tab-title li.active.list-2{
+    background: url(../img/tabtitleicon-2-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-3{
+    background: url(../img/tabtitleicon-3-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-4{
+    background: url(../img/tabtitleicon-4-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-5{
+    background: url(../img/tabtitleicon-5-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-6{
+    background: url(../img/tabtitleicon-6-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-7{
+    background: url(../img/tabtitleicon-7-hover.png) center 20px no-repeat #c20c0c;
+}
+.company-showmessage-box .tab-title li.active.list-8{
+    background: url(../img/tabtitleicon-8-hover.png) center 20px no-repeat #c20c0c;
+}
+.nodisplay{
+    display: none;
+}
+.result-tabs > div{
+    padding: 20px;
 }
