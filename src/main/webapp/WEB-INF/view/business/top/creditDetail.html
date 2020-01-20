@@ -2,9 +2,9 @@
 <div class="content-w">
     <div class="creditDetail">
         <div class="company-messages-box">
-            <h1>麦特集团有限公司<span>存续</span></h1>
-            <p>统一社会信用代码：91370600576630689W</p>
-            <h2><a href=""><img src="${ctxPath}/static/img/downloadicon.png"> 下载信用信息</a></h2>
+            <h1>${creditinfo.qiyename}<span>${creditinfo.jingyingstatus}</span></h1>
+            <p>统一社会信用代码：${creditinfo.xingyongcode</p>
+
         </div>
     </div>
     <div class="company-showmessage-box">
@@ -14,15 +14,15 @@
                 <table>
                     <tr>
                         <td width="20%" class="graybg">法定代表人</td>
-                        <td width="30%" >盖方</td>
+                        <td width="30%" >${creditinfo.faren}</td>
                         <td width="20%" class="graybg">企业类型</td>
-                        <td width="30%" >有限责任公司(自然人投资或控股)</td>
+                        <td width="30%" >${creditinfo.qiyetype}</td>
                     </tr>
                     <tr>
                         <td width="20%" class="graybg">成立日期</td>
-                        <td width="30%">2011-06-10</td>
+                        <td width="30%">${creditinfo.createtime}</td>
                         <td width="20%" class="graybg">住所</td>
-                        <td width="30%">山东省烟台市经济技术开发区广州路17号</td>
+                        <td width="30%">${creditinfo.qiyedizhi}</td>
                     </tr>
                 </table>
             </div>

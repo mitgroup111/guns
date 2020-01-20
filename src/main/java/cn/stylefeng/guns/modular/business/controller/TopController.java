@@ -69,7 +69,10 @@ public class TopController extends BaseController {
      * 跳转到添加信用信息
      */
     @RequestMapping("/detail")
-    public String creditinfoDetail() {
+    public String creditinfoDetail(@RequestParam String condition,@RequestParam String id,Model model) {
+        Creditinfo creditinfo = creditinfoService.selectById(id);
+        model.addAttribute("conValue",condition);
+        model.addAttribute("creditinfo",creditinfo);
         return PREFIX + "creditDetail.html";
     }
 
